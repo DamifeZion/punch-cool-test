@@ -1,4 +1,4 @@
-import {IconType} from "react-icons"
+import { IconType } from "react-icons";
 
 export interface NavbarSliceProps {
    showMobileMenu: boolean;
@@ -12,7 +12,6 @@ export interface UseMediaScreenProps {
    queryType?: QueryType;
    customWidth?: string;
 }
-
 
 export interface LoadingIconProps extends IconType {
    className?: string;

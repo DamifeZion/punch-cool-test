@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
+import { LoaderCircle } from "lucide-react";
+import { LoadingIconProps } from "@/types";
 import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
@@ -53,4 +55,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 Button.displayName = "Button";
 
-export { Button, buttonVariants };
+const LoadingIcon = ({ className, ...props }: LoadingIconProps) => {
+   return (
+      <LoaderCircle
+         className={cn("size-4 mr-2 animate-spin", className)}
+         {...props}
+      />
+   );
+};
+
+export { Button, LoadingIcon, buttonVariants };
