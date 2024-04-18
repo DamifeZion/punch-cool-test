@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { ButtonProps } from "./components/ui/button";
 
 export interface NavbarSliceProps {
    showMobileMenu: boolean;
@@ -15,4 +16,8 @@ export interface UseMediaScreenProps {
 
 export interface LoadingIconProps extends IconType {
    className?: string;
+}
+
+export interface MyButtonProps extends ButtonProps {
+
 }

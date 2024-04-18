@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 const formSchema = z.object({
-   text: z.string().min(2, {
+   value: z.string().min(2, {
       message: "Enter at least 2 characters.",
    }),
 });
@@ -22,7 +22,7 @@ const HeroForm = () => {
    const form = useForm<z.infer<typeof formSchema>>({
       resolver: zodResolver(formSchema),
       defaultValues: {
-         text: "",
+         value: "",
       },
    });
 
@@ -37,7 +37,7 @@ const HeroForm = () => {
          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <FormField
                control={form.control}
-               name="text"
+               name="value"
                render={({ field }) => (
                   <FormItem className="mx-auto lg:max-w-xl">
                      <FormMessage />
@@ -56,7 +56,7 @@ const HeroForm = () => {
                            >
                               <img
                                  loading="lazy"
-                                 src="/home/hero-form-icon.svg"
+                                 src="/home/back-icon-black.svg"
                                  className="size-6"
                               />
                            </Button>
