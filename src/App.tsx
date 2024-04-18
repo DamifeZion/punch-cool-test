@@ -3,11 +3,13 @@ import Home from "@/page/Home";
 
 function App() {
    return (
-      <Router>
-         <Routes>
-            <Route index element={<Home />} />
-         </Routes>
-      </Router>
+      <section suppressHydrationWarning>
+         <Router>
+            <Routes>
+               <Route index element={<Home />} />
+            </Routes>
+         </Router>
+      </section>
    );
 }
 

@@ -2,10 +2,13 @@ import { useMediaScreen } from "@/hooks/shared/useMediaScreen";
 import MobileNavbar from "./MobileNavbar";
 import { NavLink } from "react-router-dom";
 import { routeConstants } from "@/constants/route-conts";
+import { Button } from "@/components/ui/button";
+import { navbarConstants } from "@/constants/navbar-const";
 
 const Navbar = () => {
    const mobileScreen = useMediaScreen({ breakpoint: "lg" });
-   const { home } = routeConstants;
+   const { home, login } = routeConstants;
+   const { mainMenu } = navbarConstants;
 
    if (mobileScreen) {
       return <MobileNavbar />;
@@ -19,7 +22,36 @@ const Navbar = () => {
             </NavLink>
          </ul>
 
-         <ul></ul>
+         <ul id="text-links" className="space-x-7 ">
+            {mainMenu.slice(0, 4).map((menu, index) => (
+               <NavLink
+                  key={index}
+                  to={menu.href}
+                  children={menu.text}
+                  className="py-0.5 ease-linear duration-100 hover:border-b-2"
+               />
+            ))}
+         </ul>
+
+         <ul id="button-links" className="space-x-6">
+            {mainMenu.slice(5).map((menu, index) => {
+               const className =
+                  menu.href === login
+                     ? "h-fit py-0.5 px-0.5 rounded-none ease-linear duration-100 hover:bg-transparent hover:text-[#fff] hover:border-b-2"
+                     : "bg-[#fff] text-[#202229] rounded-lg hover:bg-[#FFFFFF]/90";
+
+               return (
+                  <NavLink key={index} to={menu.href}>
+                     <Button
+                        variant={menu.href === login ? "ghost" : "default"}
+                        className={className}
+                     >
+                        {menu.text}
+                     </Button>
+                  </NavLink>
+               );
+            })}
+         </ul>
       </nav>
    );
 };
