@@ -5,7 +5,7 @@ const JourneyOne = () => {
       <div className="w-full h-[345px] mx-auto bg-[#EDEFFF] overflow-hidden -skew-x-[3deg] -rotate-2">
          <div className="h-full pl-6 pr-9 skew-x-[3deg] rotate-2 grid grid-cols-2">
             <div id="journey-one-image-texts" className="grid grid-cols-[51px_1fr] gap-5 py-20">
-               <img loading="lazy" src="/public/home/journey-1.svg" className="" />
+               <img loading="lazy" src="/home/journey-1.svg" className="" />
                
                <div className="space-y-5">
                   <h1 className="max-w-[445px] text-[34px] leading-tight font-semibold">
@@ -41,7 +41,7 @@ const JourneyOne = () => {
                <div id="2" className="relative -top-20 flex flex-col gap-6 ">
                   <div className="w-[220px] h-[240px] bg-white rounded-b-[20px]">
                      <div className="w-full h-[141px] border bg-[#C8EFC4] relative">
-                        <img src="/public/home/journey-1-system-ops.svg" className="absolute bottom-0"/>
+                        <img src="/home/journey-1-system-ops.svg" className="absolute bottom-0"/>
                      </div>
 
                      <div className="px-6 mt-2">
@@ -53,7 +53,7 @@ const JourneyOne = () => {
                   </div>
 
                   <div className="w-[220px] h-[148px] bg-[#fddd8b] rounded-[20px]">
-                     <img loading="lazy" src="/public/home/journey-1-american.svg" className="h-full" />
+                     <img loading="lazy" src="/home/journey-1-american.svg" className="h-full" />
                   </div>
                </div>
             </div>

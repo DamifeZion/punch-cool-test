@@ -18,16 +18,16 @@ const Home = () => {
 
          {/*=== SECTION ONE ===*/}
          <section id="1">
-            <div className="container max-w-3xl mt-16">
-               <p className="inline-block text-center  font-bold text-6xl">
+            <div className="container max-w-3xl mt-10 400:mt-14">
+               <p className="text-4xl text-balanced text-center font-bold 400:text-5xl 500:text-6xl">
                   Finding the right fit{" "}
-                  <Avatar className="inline-block w-[68px]">
+                  <Avatar className="hidden  w-16 relative top-1 400:inline-block 400:w-[68px] sm:top-0">
                      <AvatarImage src="/home/hero-avatar.svg" />
                   </Avatar>
                   has never been easier.
                </p>
 
-               <h4 className="mx-auto mt-5 text-center text-[22px] text-pretty lg:max-w-xl">
+               <h4 className="max-w-xl mx-auto mt-5 text-center text-md 400:text-lg 500:text-[22px] sm:text-pretty ">
                   With our rigorous pre-vetting process, you'll never have to
                   worry about finding the ideal candidate ever again.
                </h4>
@@ -45,7 +45,7 @@ const Home = () => {
                <img
                   src="/home/hero-diagonal-lines.svg"
                   loading="lazy"
-                  className="w-full"
+                  className="w-full object-cover max-lg:h-[100px]"
                />
             </div>
          </section>
@@ -53,16 +53,16 @@ const Home = () => {
          {/*=== SECTION TWO ===*/}
          <section
             id="2"
-            className="py-36 bg-[#EDEFFF] relative -rotate-2 skew-x-12"
+            className="py-20 bg-[#EDEFFF] relative -rotate-2 skew-x-12 sm:py-36"
          >
             <>
                <span
                   id="right-color-blend"
-                  className="size-full absolute top-0 -right-1/2 -z-10 bg-inherit"
+                  className="size-full absolute top-0 -right-2/3 -z-10 bg-inherit"
                />
                <span
                   id="left-color-blend"
-                  className="size-full absolute top-0 -left-1/2 -z-10 bg-inherit"
+                  className="size-full absolute top-0 -left-2/3 -z-10 bg-inherit"
                />
             </>
 
@@ -71,12 +71,12 @@ const Home = () => {
                id="market-place-main-content"
                className="container z-10 rotate-2 -skew-x-12"
             >
-               <h1 className="max-w-4xl mx-auto font-bold leading-tight text-center text-[50px]">
+               <h1 className="max-w-4xl mx-auto font-bold text-center text-balance text-4xl md:text-[50px] 600:leading-tight">
                   Your one-stop marketplace for finding the talent your business
                   needs.
                </h1>
 
-               <div className="mt-[90px]">
+               <div className="mt-10 md:mt-24">
                   <MarketPlace />
                </div>
             </div>
@@ -155,7 +155,7 @@ const Home = () => {
 
 
          <section>
-            
+
          </section>
       </section>
    );
