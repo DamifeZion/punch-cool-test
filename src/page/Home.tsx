@@ -123,9 +123,12 @@ const Home = () => {
                   className="w-full h-1/2 absolute -top-6 right-0 -z-10 bg-[#202229]"
                />
 
-               <img loading="lazy" src="/home/good-hands-top-line.svg" className="mt-7 w-full absolute top-0 left-0 " />
+               <img
+                  loading="lazy"
+                  src="/home/good-hands-top-line.svg"
+                  className="mt-7 w-full absolute top-0 left-0 "
+               />
             </>
-            
 
             <div className="container mt-[140px]">
                <GoodHands />

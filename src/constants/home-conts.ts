@@ -76,5 +76,11 @@ export const homeConstants = {
       ],
    },
 
-   howItWorks: ["Resume Screening", "Video Interview", "Technical Evaluation", "Application Review", "Lets get to work"],
+   howItWorks: [
+      "Resume Screening",
+      "Video Interview",
+      "Technical Evaluation",
+      "Application Review",
+      "Lets get to work",
+   ],
 };

@@ -4,7 +4,6 @@ import { homeConstants } from "@/constants/home-conts";
 const MarketPlace = () => {
    const { itDevelopment, design } = homeConstants.marketPlace;
 
-
    return (
       <div className="grid gap-7">
          <div className="flex justify-between">

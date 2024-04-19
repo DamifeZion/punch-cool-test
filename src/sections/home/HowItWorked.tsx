@@ -50,14 +50,21 @@ const HowItWorked = () => {
                />
 
                <div className="text-[#626367] font-medium">
-                  <h1 className="font-semibold text-[34px] text-white">Jason Makki</h1>
-                  <p>Engineer at <span className="font-semibold">GROOVE</span></p>
+                  <h1 className="font-semibold text-[34px] text-white">
+                     Jason Makki
+                  </h1>
+                  <p>
+                     Engineer at <span className="font-semibold">GROOVE</span>
+                  </p>
                   <p>San Francisco</p>
                </div>
             </div>
 
             <p className="mt-14 max-w-[499px] text-[#CCCDCF] leading-loose">
-               Zwilt enabled us to deliver on time and they’ve been heavy hitters in our corner since. Zwilt enabled us to deliver on time and they’ve been heavy hitters in our corner since.Zwilt enabled us to deliver on time and they’ve been heavy hitters.
+               Zwilt enabled us to deliver on time and they’ve been heavy
+               hitters in our corner since. Zwilt enabled us to deliver on time
+               and they’ve been heavy hitters in our corner since.Zwilt enabled
+               us to deliver on time and they’ve been heavy hitters.
             </p>
          </div>
       </div>
