@@ -7,7 +7,7 @@ import { navbarConstants } from "@/constants/navbar-const";
 
 const Navbar = () => {
    const mobileScreen = useMediaScreen({ breakpoint: "lg" });
-   const { home, login } = routeConstants;
+   const { home, login, findTalent, findWork } = routeConstants;
    const { mainMenu } = navbarConstants;
 
    if (mobileScreen) {
@@ -23,14 +23,23 @@ const Navbar = () => {
          </ul>
 
          <ul id="text-links" className="space-x-7 ">
-            {mainMenu.slice(0, 4).map((menu, index) => (
-               <NavLink
-                  key={index}
-                  to={menu.href}
-                  children={menu.text}
-                  className="py-0.5 ease-linear duration-100 hover:border-b-2"
-               />
-            ))}
+            {mainMenu.slice(0, 5).map((menu, index) => {
+               const defaultStyle =
+                  "py-0.5 ease-linear duration-100 hover:underline hover:underline-offset-4";
+               const className =
+                  menu.href === findTalent || menu.href === findWork
+                     ? `${defaultStyle} font-black`
+                     : defaultStyle;
+
+               return (
+                  <NavLink
+                     key={index}
+                     to={menu.href}
+                     children={menu.text}
+                     className={className}
+                  />
+               );
+            })}
          </ul>
 
          <ul id="button-links" className="space-x-6">

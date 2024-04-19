@@ -78,16 +78,22 @@ const Home = () => {
             </div>
          </section>
 
-
          {/*=== SECTION THREE ===*/}
-         <section id="3" className="py-36 bg-[#202229] relative -rotate-2 skew-x-12" >
+         <section
+            id="3"
+            className="py-36 bg-[#202229] relative -rotate-2 skew-x-12"
+         >
             <>
                <span
                   id="right-color-blend"
                   className="size-full absolute top-0 -right-1/2 -z-10 bg-inherit"
                />
 
-               <img loading="lazy" src="/home/quotes.svg" className="absolute top-0 right-5" />
+               <img
+                  loading="lazy"
+                  src="/home/quotes.svg"
+                  className="absolute top-0 right-5"
+               />
 
                <span
                   id="left-color-blend"
@@ -97,7 +103,7 @@ const Home = () => {
                <div
                   id="left-color-blend"
                   className="w-full h-2/3 absolute -bottom-[20%] -left-5 -z-10 bg-inherit  rotate-2 -skew-x-12"
-               />               
+               />
             </>
 
             <div
@@ -107,7 +113,7 @@ const Home = () => {
                <HowItWorked />
             </div>
          </section>
-      </section> 
+      </section>
    );
 };
 
