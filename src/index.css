@@ -1,5 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/roboto");
 @import url("https://fonts.cdnfonts.com/css/switzer");
+@import url('https://fonts.cdnfonts.com/css/abeezee');
 
 @tailwind base;
 @tailwind components;
@@ -39,6 +40,7 @@
 
       --font-switzer: "Switzer", Sans-serif;
       --font-roboto: "Roboto", Sans-serif;
+      --font-abeezee: "Abeezee", Sans-serif;
    }
 
    .dark {
@@ -77,6 +79,6 @@
       @apply border-border;
    }
    body {
-      @apply bg-background text-foreground font-switzer;
+      @apply bg-background text-foreground font-switzer text-[#202229];
    }
 }

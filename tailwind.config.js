@@ -59,6 +59,7 @@ export default {
          fontFamily: {
             roboto: "var(--font-roboto)",
             switzer: "var(--font-switzer)",
+            abeezee: "var(--font-abeezee)",
          },
          borderRadius: {
             lg: "var(--radius)",

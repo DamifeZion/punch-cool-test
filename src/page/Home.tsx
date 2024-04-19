@@ -1,10 +1,13 @@
 import Navbar from "@/components/my-components/navbar/Navbar";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import HeroForm from "@/forms/home/HeroForm";
-import GoodHands from "@/sections/home/GoodHands";
+import GoodHands from "@/sections/home/GoodHands/GoodHands";
 import HowItWorked from "@/sections/home/HowItWorked";
 import MarketPlace from "@/sections/home/MarketPlace";
 import MultiTab from "@/sections/home/MultiTab";
+import JourneyOne from "@/sections/home/journey/JourneyOne";
+import JourneyThree from "@/sections/home/journey/JourneyThree";
+import JourneyTwo from "@/sections/home/journey/JourneyTwo";
 
 const Home = () => {
    return (
@@ -133,6 +136,26 @@ const Home = () => {
             <div className="container mt-[140px]">
                <GoodHands />
             </div>
+         </section>
+
+         {/*=== SECTION FIVE ===*/}
+         <section id="4" className="py-32 relative bg-white">
+            <h1 className="text-center text-[54px] font-bold">
+               Start your journey today.
+            </h1>
+
+            <div id="journeys" className="mt-16 flex flex-col ">
+               <div className="container space-y-8">
+                  <JourneyOne />
+                  <JourneyTwo />
+                  <JourneyThree />
+               </div>
+            </div>
+         </section>
+
+
+         <section>
+            
          </section>
       </section>
    );
