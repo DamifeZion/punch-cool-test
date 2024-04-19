@@ -1,6 +1,7 @@
 import Navbar from "@/components/my-components/navbar/Navbar";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import HeroForm from "@/forms/home/HeroForm";
+import HowItWorked from "@/sections/home/HowItWorked";
 import MarketPlace from "@/sections/home/MarketPlace";
 import MultiTab from "@/sections/home/MultiTab";
 
@@ -48,7 +49,7 @@ const Home = () => {
          {/*=== SECTION TWO ===*/}
          <section
             id="2"
-            className="w-screen py-36 bg-[#EDEFFF] relative -rotate-2 skew-x-12"
+            className="py-36 bg-[#EDEFFF] relative -rotate-2 skew-x-12"
          >
             <>
                <span
@@ -63,7 +64,7 @@ const Home = () => {
 
             {/* Reverse the skew and rotate on the parent for this child */}
             <div
-               id="main-content"
+               id="market-place-main-content"
                className="container z-10 rotate-2 -skew-x-12"
             >
                <h1 className="max-w-4xl mx-auto font-bold leading-tight text-center text-[50px]">
@@ -79,6 +80,33 @@ const Home = () => {
 
 
          {/*=== SECTION THREE ===*/}
+         <section id="3" className="py-36 bg-[#202229] relative -rotate-2 skew-x-12" >
+            <>
+               <span
+                  id="right-color-blend"
+                  className="size-full absolute top-0 -right-1/2 -z-10 bg-inherit"
+               />
+
+               <img loading="lazy" src="/home/quotes.svg" className="absolute top-0 right-5" />
+
+               <span
+                  id="left-color-blend"
+                  className="size-full absolute top-0 -left-1/2 -z-10 bg-inherit"
+               />
+
+               <div
+                  id="left-color-blend"
+                  className="w-full h-2/3 absolute -bottom-[20%] -left-5 -z-10 bg-inherit  rotate-2 -skew-x-12"
+               />               
+            </>
+
+            <div
+               id="how-work-main-content"
+               className="container z-10 rotate-2 -skew-x-12"
+            >
+               <HowItWorked />
+            </div>
+         </section>
       </section> 
    );
 };
