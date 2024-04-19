@@ -56,7 +56,7 @@ const HeroForm = () => {
                            >
                               <img
                                  loading="lazy"
-                                 src="/home/back-icon-black.svg"
+                                 src="/home/arrow-primary.svg"
                                  className="size-6"
                               />
                            </Button>

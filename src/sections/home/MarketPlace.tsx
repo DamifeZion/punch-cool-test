@@ -4,17 +4,6 @@ import { homeConstants } from "@/constants/home-conts";
 const MarketPlace = () => {
    const { itDevelopment, design } = homeConstants.marketPlace;
 
-   const back = (
-      <div className="w-fit text-center space-y-2">
-         <span className="size-20 flex items-center justify-center bg-[#F6F6F6] rounded-lg">
-            <img
-               loading="lazy"
-               src="/home/back-icon-black.svg"
-               className="size-7"
-            />
-         </span>
-      </div>
-   );
 
    return (
       <div className="grid gap-7">
@@ -67,7 +56,15 @@ const MarketPlace = () => {
                         </div>
                      ))}
 
-                     {back}
+                     <div className="w-fit text-center space-y-2">
+                        <span className="size-20 flex items-center justify-center bg-[#F6F6F6] rounded-lg">
+                           <img
+                              loading="lazy"
+                              src="/home/arrow-primary.svg"
+                              className="size-7"
+                           />
+                        </span>
+                     </div>
                   </CardContent>
                </CardHeader>
             </Card>
@@ -109,7 +106,15 @@ const MarketPlace = () => {
                   </CardTitle>
 
                   <CardContent className="pt-2 px-0 pb-0 flex gap-4">
-                     {back}
+                     <div className="w-fit text-center space-y-2">
+                        <span className="size-20 flex items-center justify-center bg-[#F6F6F6] rounded-lg">
+                           <img
+                              loading="lazy"
+                              src="/home/arrow-primary.svg"
+                              className="size-7 rotate-180"
+                           />
+                        </span>
+                     </div>
 
                      {design.map((data, index) => (
                         <div

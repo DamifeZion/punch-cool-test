@@ -19,7 +19,7 @@ const MyButton = ({
       >
          <img
             loading="lazy"
-            src="/home/back-icon-blue.svg"
+            src="/home/arrow-secondary.svg"
             className={cn("size-[16px]", imgClassName)}
          />
 

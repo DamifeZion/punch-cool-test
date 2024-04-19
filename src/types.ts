@@ -1,5 +1,7 @@
 import { IconType } from "react-icons";
 import { ButtonProps } from "./components/ui/button";
+import {ComponentPropsWithoutRef} from "react"
+import * as AccordionPrimitive from "@radix-ui/react-accordion";
 
 export interface NavbarSliceProps {
    showMobileMenu: boolean;
@@ -23,4 +25,8 @@ export interface MyButtonProps extends ButtonProps {
    text: string;
    textClassname?: string;
    btnClassName?: string;
+}
+
+export interface AccordionTriggerProps extends ComponentPropsWithoutRef<typeof AccordionPrimitive.Trigger> {
+   showIcon?: boolean;
 }

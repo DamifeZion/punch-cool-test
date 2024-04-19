@@ -1,6 +1,7 @@
 import Navbar from "@/components/my-components/navbar/Navbar";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import HeroForm from "@/forms/home/HeroForm";
+import GoodHands from "@/sections/home/GoodHands";
 import HowItWorked from "@/sections/home/HowItWorked";
 import MarketPlace from "@/sections/home/MarketPlace";
 import MultiTab from "@/sections/home/MultiTab";
@@ -102,7 +103,7 @@ const Home = () => {
 
                <div
                   id="left-color-blend"
-                  className="w-full h-2/3 absolute -bottom-[20%] -left-5 -z-10 bg-inherit  rotate-2 -skew-x-12"
+                  className="w-1/2 h-1/2 absolute -bottom-24 right-0 -z-10 bg-inherit "
                />
             </>
 
@@ -111,6 +112,23 @@ const Home = () => {
                className="container z-10 rotate-2 -skew-x-12"
             >
                <HowItWorked />
+            </div>
+         </section>
+
+         {/*=== SECTION FOUR ===*/}
+         <section id="4" className="py-32 relative bg-white">
+            <>
+               <div
+                  id="left-color-blend"
+                  className="w-full h-1/2 absolute -top-6 right-0 -z-10 bg-[#202229]"
+               />
+
+               <img loading="lazy" src="/home/good-hands-top-line.svg" className="mt-7 w-full absolute top-0 left-0 " />
+            </>
+            
+
+            <div className="container mt-[140px]">
+               <GoodHands />
             </div>
          </section>
       </section>
