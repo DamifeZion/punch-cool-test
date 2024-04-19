@@ -2,22 +2,35 @@ import { MyButtonProps } from "@/types";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 
-const MyButton = ({ className, ...props}: MyButtonProps) => {
+const MyButton = ({
+   text,
+   textClassname,
+   imgClassName,
+   btnClassName,
+   ...props
+}: MyButtonProps) => {
    return (
       <Button
-         className={cn("px-0 py-0 h-fit gap-4 relative bg-transparent hover:bg-transparent border text-[22px] text-[#202229] rounded-[30px] group/button ", className)}
+         className={cn(
+            "group px-4 size-[49.5px] flex items-center rounded-[30px] relative hover:w-[164px] hover:justify-end  transition-all ease-linear duration-300",
+            btnClassName
+         )}
          {...props}
       >
-   
-         <span className="size-[74px] flex items-center justify-center rounded-[30px] bg-[#202229] ">
-            <img
-               loading="lazy"
-               src="/public/home/back-icon-blue.svg"
-               className="fill-transparent"
-            />
-         </span>
+         <img
+            loading="lazy"
+            src="/home/back-icon-blue.svg"
+            className={cn("size-[16px]", imgClassName)}
+         />
 
-         <p className="transition-all ease-linear duration-100 font-medium group-hover/button:-translate-x-0 ">Explore More</p>
+         <p
+            className={cn(
+               "ml-3 text-sm text-[#202229] transition-all ease-linear duration-300 absolute left-full group-hover:left-5 group-hover:ml-0 group-hover:-translate-x-0 group-hover:text-white",
+               textClassname
+            )}
+         >
+            {text}
+         </p>
       </Button>
    );
 };

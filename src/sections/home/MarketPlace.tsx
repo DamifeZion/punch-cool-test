@@ -140,7 +140,12 @@ const MarketPlace = () => {
                id="text-cont"
                className="max-w-[350px] flex items-center gap-3 text-[22px]"
             >
-               <MyButton />
+               <MyButton
+                  text="Explore More"
+                  btnClassName="px-5 size-[74px] rounded-[30px] hover:w-[250px]"
+                  imgClassName="size-6"
+                  textClassname="ml-3 text-[22px]"
+               />
             </div>
 
             {/*  */}
@@ -149,7 +154,12 @@ const MarketPlace = () => {
                className="max-w-[740px] w-full items-start rounded-sm shadow-none"
             >
                <p className="font-medium text-[22px]">
-                  <strong> 30 more</strong>{" "}
+                  <button>
+                     <strong className="cursor-pointer hover:underline hover:underline-offset-4">
+                        {" "}
+                        30 more
+                     </strong>
+                  </button>{" "}
                   <span className="font-normal">to explore</span>
                </p>
             </div>

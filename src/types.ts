@@ -19,5 +19,8 @@ export interface LoadingIconProps extends IconType {
 }
 
 export interface MyButtonProps extends ButtonProps {
-
+   imgClassName?: string;
+   text: string;
+   textClassname?: string;
+   btnClassName?: string;
 }

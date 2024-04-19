@@ -76,7 +76,10 @@ const Home = () => {
                </div>
             </div>
          </section>
-      </section>
+
+
+         {/*=== SECTION THREE ===*/}
+      </section> 
    );
 };
 
