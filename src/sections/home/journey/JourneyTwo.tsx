@@ -3,7 +3,7 @@ import MyButton from "@/components/my-components/MyButton";
 const JourneyTwo = () => {
    return (
       <div className="w-full mx-auto bg-[#fff7e1] overflow-hidden -skew-x-[3deg] -rotate-2 relative right-1 lg:h-[345px]">
-         <div className="h-full pl-6 skew-x-[3deg] rotate-2 grid grid-cols-2 md:pr-9">
+         <div className="h-full pl-6 skew-x-[3deg] rotate-2 grid md:grid-cols-2 md:pr-9">
             <div id="journey-one-image-texts" className="py-10 grid grid-cols-[51px_1fr] gap-5 md:py-14 lg:py-20">
                <img loading="lazy" src="/home/journey-2.svg" className="" />
                

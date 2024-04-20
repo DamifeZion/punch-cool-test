@@ -22,7 +22,7 @@ const Home = () => {
                <p className="text-4xl text-balanced text-center font-bold 400:text-5xl 500:text-6xl">
                   Finding the right fit{" "}
                   <Avatar className="hidden  w-16 relative top-1 400:inline-block 400:w-[68px] sm:top-0">
-                     <AvatarImage src="/home/hero-avatar.svg" />
+                     <AvatarImage loading="eager" src="/home/hero-avatar.svg" />
                   </Avatar>
                   has never been easier.
                </p>
