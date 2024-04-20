@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const HowItWorked = () => {
    return (
-      <div className="grid grid-cols-2">
+      <div className="grid max-lg:gap-20 lg:grid-cols-2">
          <div>
-            <h1 className="max-w-sm text-[54px] leading-tight font-bold text-white">
+            <h1 className="max-w-md max-lg:mx-auto max-lg:text-center text-[54px] leading-tight font-bold text-white lg:max-w-sm">
                How it worked for Jason{" "}
                <Avatar className="inline-block size-[55px]">
                   <AvatarImage src="/home/jason.svg" />
@@ -13,19 +13,19 @@ const HowItWorked = () => {
                at{" "}
                <img
                   loading="lazy"
-                  src="/public/home/groove.svg"
-                  className="mt-3"
+                  src="/home/groove.svg"
+                  className="mt-3 max-lg:mx-auto"
                />
             </h1>
 
-            <p className="max-w-[460px] mt-10 text-[22px] text-[#CCCDCF]">
+            <p className="max-lg:mx-auto max-lg:text-center max-w-[460px] mt-10 text-[22px] text-[#CCCDCF]">
                Zwilt enabled us to deliver on time and they’ve been heavy
                hitters in our corner since.
             </p>
 
             <div
                id="btns"
-               className="mt-[44px] flex items-center gap-4 *:rounded-[20px] *:bg-white *:size-[49px]"
+               className="max-lg:justify-center mt-[44px] flex items-center gap-4 *:rounded-[20px] *:bg-white *:size-[49px]"
             >
                <Button className="hover:bg-[#F6F6F6]">
                   <img
@@ -41,8 +41,10 @@ const HowItWorked = () => {
             </div>
          </div>
 
-         <div className="mt-20">
-            <div className="grid grid-cols-[98px_1fr] gap-4">
+
+
+         <div className="lg:mt-20 mx-auto">
+            <div className="flex items-center justify-center gap-4 lg:grid lg:grid-cols-[98px_1fr]">
                <img
                   loading="lazy"
                   src="/home/groove-rounded.svg"
@@ -60,7 +62,7 @@ const HowItWorked = () => {
                </div>
             </div>
 
-            <p className="mt-14 max-w-[499px] text-[#CCCDCF] leading-loose">
+            <p className="max-lg:text-center mt-14 max-w-[499px] text-[#CCCDCF] leading-loose">
                Zwilt enabled us to deliver on time and they’ve been heavy
                hitters in our corner since. Zwilt enabled us to deliver on time
                and they’ve been heavy hitters in our corner since.Zwilt enabled

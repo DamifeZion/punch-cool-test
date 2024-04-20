@@ -96,16 +96,16 @@ const Home = () => {
                <img
                   loading="lazy"
                   src="/home/quotes.svg"
-                  className="absolute top-0 right-5"
+                  className="absolute top-0 w-[200px] -right-28 lg:right-5 lg:w-auto"
                />
 
                <span
                   id="left-color-blend"
-                  className="size-full absolute top-0 -left-1/2 -z-10 bg-inherit"
+                  className="size-full absolute top-0 -left-2/3 -z-10 bg-inherit"
                />
 
                <div
-                  id="left-color-blend"
+                  id="right-color-blend"
                   className="w-1/2 h-1/2 absolute -bottom-24 right-0 -z-10 bg-inherit "
                />
             </>
