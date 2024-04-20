@@ -41,11 +41,11 @@ const Home = () => {
                <MultiTab />
             </div>
 
-            <div className="relative -bottom-3 mt-16">
+            <div id="gradient" className="relative -bottom-3 mt-16">
                <img
                   src="/home/hero-diagonal-lines.svg"
                   loading="lazy"
-                  className="w-full object-cover max-lg:h-[100px]"
+                  className="w-full object-cover max-sm:h-[100px] max-lg:h-[120px]"
                />
             </div>
          </section>

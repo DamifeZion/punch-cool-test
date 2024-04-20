@@ -18,7 +18,7 @@ export default {
          },
       },
       extend: {
-screens: {
+         screens: {
             300: "300px",
             400: "400px",
             500: "500px",
