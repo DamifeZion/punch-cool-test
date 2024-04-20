@@ -154,9 +154,7 @@ const Home = () => {
          </section>
 
          {/*=== SECTION SIX ===*/}
-         <section id="6" className="">
-
-         </section>
+         <section id="6" className=""></section>
       </section>
    );
 };

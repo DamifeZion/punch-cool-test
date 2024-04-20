@@ -33,7 +33,7 @@ const MarketPlace = () => {
                <CardHeader className="px-0 py-0">
                   <CardTitle className="font-medium text-sm md:text-md">
                      IT & Development
-                  </CardTitle>                  
+                  </CardTitle>
                </CardHeader>
 
                <div className="overflow-x-auto pr-0">
@@ -71,12 +71,12 @@ const MarketPlace = () => {
             </Card>
          </div>
 
-
-
-
          {/*=== Section TWO ===*/}
          <div className="flex flex-col justify-between box-border  lg:grid lg:grid-cols-2">
-            <div id="text-cont" className="py-6 lg:max-w-[350px] max-lg:mx-auto">
+            <div
+               id="text-cont"
+               className="py-6 lg:max-w-[350px] max-lg:mx-auto"
+            >
                <h1 className="max-w-[350px] mx-auto text-2xl font-medium text-center lg:text-start">
                   Explore Creative individuals with a keen eye for detail.
                </h1>
@@ -111,7 +111,7 @@ const MarketPlace = () => {
                </CardHeader>
 
                <div className="overflow-x-auto">
-               <CardContent className="pt-2 px-0 pb-0 flex gap-4">
+                  <CardContent className="pt-2 px-0 pb-0 flex gap-4">
                      <div className="w-fit text-center space-y-2">
                         <span className="size-20 flex items-center justify-center bg-[#F6F6F6] rounded-lg">
                            <img
@@ -159,8 +159,6 @@ const MarketPlace = () => {
                />
             </div>
 
-
-            
             <div
                id="card"
                className="items-start rounded-sm shadow-none lg:max-w-[750px] lg:w-full"

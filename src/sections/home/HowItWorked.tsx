@@ -41,8 +41,6 @@ const HowItWorked = () => {
             </div>
          </div>
 
-
-
          <div className="lg:mt-20 mx-auto">
             <div className="flex items-center justify-center gap-4 lg:grid lg:grid-cols-[98px_1fr]">
                <img

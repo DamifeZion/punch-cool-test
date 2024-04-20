@@ -1,9 +1,6 @@
 import { IconType } from "react-icons";
 import { ButtonProps } from "./components/ui/button";
-import {
-   ComponentPropsWithoutRef,
-   HTMLAttributes,
-} from "react";
+import { ComponentPropsWithoutRef, HTMLAttributes } from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
 
 export interface NavbarSliceProps {

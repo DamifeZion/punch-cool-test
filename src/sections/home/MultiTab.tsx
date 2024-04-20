@@ -32,7 +32,8 @@ const MultiTab = () => {
                {tabOneList.reverse().map((list, index) => (
                   <ul key={index}>
                      {list.map((data, i) => {
-                        const defaultStyle = "pt-4 text-[#959595] first:pt-0 w-fit  max-400:text-xs";
+                        const defaultStyle =
+                           "pt-4 text-[#959595] first:pt-0 w-fit  max-400:text-xs";
                         const activeClassName =
                            data === "MERN Stack Developer" ||
                            data === "Explore More"
@@ -56,7 +57,8 @@ const MultiTab = () => {
                {tabOneList.reverse().map((list, index) => (
                   <ul key={index}>
                      {list.map((data, i) => {
-                        const defaultStyle = "pt-4 text-[#959595] first:pt-0 w-fit  max-400:text-xs";
+                        const defaultStyle =
+                           "pt-4 text-[#959595] first:pt-0 w-fit  max-400:text-xs";
                         const activeClassName =
                            data === "MERN Stack Developer" ||
                            data === "Explore More"

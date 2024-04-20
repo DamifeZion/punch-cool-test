@@ -1,4 +1,4 @@
-import { CgMenuLeft } from "react-icons/cg"; 
+import { CgMenuLeft } from "react-icons/cg";
 import { Button } from "@/components/ui/button";
 import { navbarConstants } from "@/constants/navbar-const";
 import { routeConstants } from "@/constants/route-conts";
@@ -9,8 +9,6 @@ const MobileNavbar = () => {
    const { home, login } = routeConstants;
    const { mainMenu } = navbarConstants;
 
-
-
    return (
       <nav className="container !max-w-screen-1xl mt-4 h-[61px] flex items-center justify-between bg-[#525AA0] text-[#FFFFFF] rounded-[15px]">
          <NavLink to={home}>
@@ -19,16 +17,18 @@ const MobileNavbar = () => {
 
          <Sheet>
             <SheetTrigger asChild>
-               <Button size="icon" className="bg-white text-[#202229] hover:bg-white/90 hover:text-[#202229]" >
-                  <CgMenuLeft className="size-6"/>
+               <Button
+                  size="icon"
+                  className="bg-white text-[#202229] hover:bg-white/90 hover:text-[#202229]"
+               >
+                  <CgMenuLeft className="size-6" />
                </Button>
             </SheetTrigger>
 
-            <SheetContent side="left" className="pb-0 flex flex-col" >
+            <SheetContent side="left" className="pb-0 flex flex-col">
                <NavLink to={home}>
                   <img src="/navbar/logo-black.svg" loading="eager" />
                </NavLink>
-
 
                <div className="mt-4 pb-6 flex flex-col flex-grow overflow-y-auto">
                   <ul id="text-links" className="space-y-4  text-xl">
@@ -47,7 +47,10 @@ const MobileNavbar = () => {
                      })}
                   </ul>
 
-                  <ul id="button-links" className="pt-6 mt-auto flex flex-col gap-6">
+                  <ul
+                     id="button-links"
+                     className="pt-6 mt-auto flex flex-col gap-6"
+                  >
                      {mainMenu.slice(5).map((menu, index) => {
                         const className =
                            menu.href === login
@@ -57,7 +60,9 @@ const MobileNavbar = () => {
                         return (
                            <NavLink key={index} to={menu.href}>
                               <Button
-                                 variant={menu.href === login ? "ghost" : "default"}
+                                 variant={
+                                    menu.href === login ? "ghost" : "default"
+                                 }
                                  className={className}
                               >
                                  {menu.text}
@@ -69,9 +74,8 @@ const MobileNavbar = () => {
                </div>
             </SheetContent>
          </Sheet>
-         
       </nav>
-   )
+   );
 };
 
 export default MobileNavbar;
