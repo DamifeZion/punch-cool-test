@@ -33,13 +33,13 @@ const SpinnerNumberBlock = ({
 const GoodHands = () => {
    return (
       <div>
-         <h1 className="max-lg:text-center max-lg:text-4xl max-w-[570px] text-pretty leading-[1.2] font-bold text-[#202229] lg:leading-snug lg:text-[54px]">
+         <h1 className="max-sm:text-center text-[45px] max-w-[570px] text-pretty leading-[1.2] font-bold text-[#202229] sm:leading-snug 400:text-[54px]">
             How we ensure you’re in good hands.
          </h1>
 
-         <div className="max-lg:gap-14 grid lg:grid-cols-2">
+         <div className="grid gap-14  sm:grid-cols-2 lg:gap-14">
             <div id="good-hands-accordion" className="mt-7 text-[#202229]">
-               <p className="max-w-[600px] my-7 text-lg text-center text-[#1E1515] lg:text-start lg:text-[22px]">
+               <p className="max-w-[600px] my-7 text-lg text-center text-[#1E1515] sm:text-start lg:text-[22px]">
                   With our comprehensive screening process, we hand-pick highly
                   skilled candidates so you can onboard them in a matter of
                   days.
