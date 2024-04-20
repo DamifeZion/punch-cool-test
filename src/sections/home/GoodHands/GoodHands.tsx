@@ -33,7 +33,7 @@ const SpinnerNumberBlock = ({
 const GoodHands = () => {
    return (
       <div>
-         <h1 className="max-sm:text-center text-[45px] max-w-[570px] text-pretty leading-[1.2] font-bold text-[#202229] sm:leading-snug 400:text-[54px]">
+         <h1 className="max-sm:text-center max-w-md text-[45px] text-pretty leading-[1.2] font-bold text-[#202229] sm:leading-snug 400:text-[54px] lg:max-w-[570px]">
             How we ensure you’re in good hands.
          </h1>
 
