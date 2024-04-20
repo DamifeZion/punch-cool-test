@@ -2,9 +2,9 @@ import MyButton from "@/components/my-components/MyButton";
 
 const JourneyOne = () => {
    return (
-      <div className="w-full h-[345px] mx-auto bg-[#EDEFFF] overflow-hidden -skew-x-[3deg] -rotate-2">
-         <div className="h-full pl-6 pr-9 skew-x-[3deg] rotate-2 grid grid-cols-2">
-            <div id="journey-one-image-texts" className="grid grid-cols-[51px_1fr] gap-5 py-20">
+      <div className="w-full mx-auto bg-[#EDEFFF] overflow-hidden -skew-x-[3deg] -rotate-2 md:h-[345px]">
+         <div className="h-full pl-6 pr-9 skew-x-[3deg] rotate-2 grid md:grid-cols-2">
+            <div id="journey-one-image-texts" className="py-10 grid grid-cols-[51px_1fr] gap-5 md:py-14 lg:py-20">
                <img loading="lazy" src="/home/journey-1.svg" className="" />
                
                <div className="space-y-5">
@@ -17,7 +17,7 @@ const JourneyOne = () => {
             </div>
 
 
-            <div id="journey-one-image-group" className="flex justify-end gap-6">
+            <div id="journey-one-image-group" className="max-md:hidden flex justify-end gap-6">
                <div id="1">
                   <div className="w-[220px] h-[240px] bg-white rounded-b-[20px]  relative -top-7 ">
                      <div className="w-full h-[141px] rounded-bl-[20px] bg-[#FFDACE]">
@@ -38,7 +38,7 @@ const JourneyOne = () => {
                </div>
 
 
-               <div id="2" className="relative -top-20 flex flex-col gap-6 ">
+               <div id="2" className="relative -top-20 flex flex-col gap-6 max-lg:hidden">
                   <div className="w-[220px] h-[240px] bg-white rounded-b-[20px]">
                      <div className="w-full h-[141px] border bg-[#C8EFC4] relative">
                         <img src="/home/journey-1-system-ops.svg" className="absolute bottom-0"/>

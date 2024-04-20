@@ -140,7 +140,7 @@ const Home = () => {
 
          {/*=== SECTION FIVE ===*/}
          <section id="4" className="py-32 relative bg-white">
-            <h1 className="text-center text-[54px] font-bold">
+            <h1 className="text-center text-5xl text-pretty font-bold lg:text-[54px]">
                Start your journey today.
             </h1>
 
