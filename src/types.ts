@@ -38,3 +38,9 @@ export interface SpinnerNumberBlockProps
    iClassName?: string;
    number: number;
 }
+
+export interface SliderListProps
+   extends Omit<HTMLAttributes<HTMLLIElement>, "children"> {
+   text: string;
+   bulletClassName?: string;
+}

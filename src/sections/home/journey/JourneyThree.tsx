@@ -2,8 +2,8 @@ import MyButton from "@/components/my-components/MyButton";
 
 const JourneyThree = () => {
    return (
-      <div className="w-full h-[345px] mx-auto bg-[#F3F3F3] overflow-hidden -skew-x-[3deg] -rotate-2 relative right-1">
-         <div className="h-full pl-6 skew-x-[3deg] rotate-2 grid md:grid-cols-2 lg:pr-9">
+      <div className="w-full mx-auto bg-[#F3F3F3] overflow-hidden -skew-x-[3deg] -rotate-2 relative right-1 md:h-[345px]">
+         <div className="h-full px-6 skew-x-[3deg] rotate-2 grid md:grid-cols-2 md:pr-6">
             <div
                id="journey-one-image-texts"
                className="grid grid-cols-[51px_1fr] gap-5 py-20"
@@ -24,7 +24,7 @@ const JourneyThree = () => {
 
             <div
                id="journey-one-image-group"
-               className="max-md:hidden flex justify-end relative max-lg:-top-[10px] lg:-top-[22px]"
+               className="max-md:hidden flex justify-end relative -right-5 max-lg:-top-[10px] lg:-top-[22px]"
             >
                <img
                   loading="eager"

@@ -1,13 +1,14 @@
 import Navbar from "@/components/my-components/navbar/Navbar";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import HeroForm from "@/forms/home/HeroForm";
-import GoodHands from "@/sections/home/GoodHands/GoodHands";
+import GoodHands from "@/sections/home/good-hands/GoodHands";
 import HowItWorked from "@/sections/home/HowItWorked";
 import MarketPlace from "@/sections/home/MarketPlace";
 import MultiTab from "@/sections/home/MultiTab";
 import JourneyOne from "@/sections/home/journey/JourneyOne";
 import JourneyThree from "@/sections/home/journey/JourneyThree";
 import JourneyTwo from "@/sections/home/journey/JourneyTwo";
+import WhyChooseZiltSlider from "@/sections/home/why-choose-zilt-sliders/WhyChooseZiltSlider";
 
 const Home = () => {
    return (
@@ -89,12 +90,12 @@ const Home = () => {
          >
             <>
                <span
-                  id="right-color-blend"
+                  id="right-top-color-blend"
                   className="size-full absolute top-0 -right-1/2 -z-10 bg-inherit"
                />
 
                <img
-                  loading="lazy"
+                  loading="eager"
                   src="/home/quotes.svg"
                   className="absolute top-0 w-[200px] -right-28 lg:right-5 lg:w-auto"
                />
@@ -105,7 +106,7 @@ const Home = () => {
                />
 
                <div
-                  id="right-color-blend"
+                  id="right-bottom-color-blend"
                   className="w-1/2 h-1/2 absolute -bottom-24 right-0 -z-10 bg-inherit "
                />
             </>
@@ -154,7 +155,12 @@ const Home = () => {
          </section>
 
          {/*=== SECTION SIX ===*/}
-         <section id="6" className=""></section>
+         <section
+            id="6"
+            className="py-8 bg-gradient-to-b from-white via-[#EDEFFF] via-100%  lg:py-24"
+         >
+            <WhyChooseZiltSlider />
+         </section>
       </section>
    );
 };
