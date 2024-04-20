@@ -133,7 +133,7 @@ const Home = () => {
                />
             </>
 
-            <div className="container mt-[140px]">
+            <div className="container mt-16 lg:mt-36">
                <GoodHands />
             </div>
          </section>

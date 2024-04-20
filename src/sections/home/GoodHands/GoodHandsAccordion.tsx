@@ -41,10 +41,10 @@ const GoodHandsAccordion = () => {
                ),
             })}
          >
-            <AccordionTrigger className="h-20 flex items-center justify-start gap-5">
+            <AccordionTrigger className="h-20 flex items-center justify-start text-start gap-3 lg:gap-5">
                <span
                   className={cn(
-                     "size-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
+                     "min-w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
                      {
                         "bg-[#8BA4FD]": activeAccordion(howItWorks[0]),
                      }
@@ -80,10 +80,10 @@ const GoodHandsAccordion = () => {
                "shadow-xl": activeAccordion(howItWorks[1]),
             })}
          >
-            <AccordionTrigger className="h-20 flex items-center justify-start gap-5">
+            <AccordionTrigger className="h-20 flex items-center justify-start text-start gap-3 lg:gap-5">
                <span
                   className={cn(
-                     "size-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
+                     "min-w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
                      {
                         "bg-[#8BA4FD]": activeAccordion(howItWorks[1]),
                      }
@@ -119,10 +119,10 @@ const GoodHandsAccordion = () => {
                "shadow-xl": activeAccordion(howItWorks[2]),
             })}
          >
-            <AccordionTrigger className="h-20 flex items-center justify-start gap-5">
+            <AccordionTrigger className="h-20 flex items-center justify-start text-start gap-3 lg:gap-5">
                <span
                   className={cn(
-                     "size-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
+                     "min-w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
                      {
                         "bg-[#8BA4FD]": activeAccordion(howItWorks[2]),
                      }
@@ -158,10 +158,10 @@ const GoodHandsAccordion = () => {
                "shadow-xl": activeAccordion(howItWorks[3]),
             })}
          >
-            <AccordionTrigger className="h-20 flex items-center justify-start gap-5">
+            <AccordionTrigger className="h-20 flex items-center justify-start text-start gap-3 lg:gap-5">
                <span
                   className={cn(
-                     "size-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
+                     "min-w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
                      {
                         "bg-[#8BA4FD]": activeAccordion(howItWorks[3]),
                      }
@@ -197,10 +197,10 @@ const GoodHandsAccordion = () => {
                "shadow-xl": activeAccordion(howItWorks[4]),
             })}
          >
-            <AccordionTrigger className="h-20 flex items-center justify-start gap-5">
+            <AccordionTrigger className="h-20 flex items-center justify-start text-start gap-3 lg:gap-5">
                <span
                   className={cn(
-                     "size-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
+                     "min-w-[57px] h-[57px] flex items-center justify-center rounded-full bg-[#ECECEC]",
                      {
                         "bg-[#8BA4FD]": activeAccordion(howItWorks[4]),
                      }
