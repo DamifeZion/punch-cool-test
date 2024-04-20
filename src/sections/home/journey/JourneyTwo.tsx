@@ -18,7 +18,7 @@ const JourneyTwo = () => {
 
 
             <div id="journey-one-image-group" className="max-md:hidden flex justify-end relative max-lg:-top-[20px] lg:-top-[22px]">
-              <img loading="lazy" src="/home/journey-2-images.png" className="max-lg:h-[110%] relative max-lg:-right-5" />
+              <img loading="eager" src="/home/journey-2-images.png" className="max-lg:h-[110%] relative max-lg:-right-5" />
             </div>
          </div>
       </div>
