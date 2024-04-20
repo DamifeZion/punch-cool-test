@@ -71,7 +71,7 @@ const Home = () => {
                id="market-place-main-content"
                className="container z-10 rotate-2 -skew-x-12"
             >
-               <h1 className="max-w-4xl mx-auto font-bold text-center text-balance text-4xl md:text-[50px] 600:leading-tight">
+               <h1 className="max-w-4xl mx-auto font-bold text-center text-balance text-[45px] leading-tight md:text-[50px]">
                   Your one-stop marketplace for finding the talent your business
                   needs.
                </h1>
