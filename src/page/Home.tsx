@@ -139,7 +139,7 @@ const Home = () => {
          </section>
 
          {/*=== SECTION FIVE ===*/}
-         <section id="4" className="py-32 relative bg-white">
+         <section id="5" className="pb-16 relative bg-white lg:py-32">
             <h1 className="text-center text-5xl text-pretty font-bold lg:text-[54px]">
                Start your journey today.
             </h1>
@@ -153,8 +153,8 @@ const Home = () => {
             </div>
          </section>
 
-
-         <section>
+         {/*=== SECTION SIX ===*/}
+         <section id="6" className="">
 
          </section>
       </section>
