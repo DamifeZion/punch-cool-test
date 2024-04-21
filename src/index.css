@@ -81,4 +81,13 @@
    body {
       @apply min-w-[300px] bg-background text-foreground font-switzer text-[#202229];
    }
+
+   /*NOTE: THE BELOW DIAGONAL SEPARATOR WOULD BE USED IN A CONTAINER MATCHING THE NEXT CONTAINER BACKGROUND, TO SIMULATE A SKEW/SLANT */
+   #right-separator {
+      @apply absolute left-0 bottom-0 border-t-[4.5vw] border-t-transparent border-r-[100vw] border-r-black;
+   }
+
+   #left-separator {
+      @apply absolute left-0 bottom-0 border-b-[4.5vw] border-b-transparent border-l-[100vw] border-l-black;
+   }
 }

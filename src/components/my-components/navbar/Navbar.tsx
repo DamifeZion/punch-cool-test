@@ -15,7 +15,7 @@ const Navbar = () => {
    }
 
    return (
-      <nav className="container !max-w-screen-1xl mt-12 h-[61px] flex items-center justify-between bg-[#525AA0] text-[#FFFFFF] rounded-[15px]">
+      <nav className="container !max-w-screen-1xl mt-9 h-[61px] flex items-center justify-between bg-[#525AA0] text-[#FFFFFF] rounded-[15px]">
          <ul>
             <NavLink to={home}>
                <img src="/navbar/logo.svg" />

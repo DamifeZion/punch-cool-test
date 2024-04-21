@@ -38,6 +38,10 @@ export default {
             "5xl": "3000px",
          },
 
+         fontSize: {
+            "md": "16px",
+         },
+
          colors: {
             border: "hsl(var(--border))",
             input: "hsl(var(--input))",
