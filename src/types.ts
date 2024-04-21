@@ -11,9 +11,9 @@ type Breakpoint = "xsm" | "sm" | "md" | "lg";
 type QueryType = "min-width" | "max-width";
 
 export interface UseMediaScreenProps {
-   breakpoint: Breakpoint;
+   breakpoint?: Breakpoint;
    queryType?: QueryType;
-   customWidth?: string;
+   customBreakpoint?: string;
 }
 
 export interface LoadingIconProps extends IconType {

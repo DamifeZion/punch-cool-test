@@ -83,4 +83,27 @@ export const homeConstants = {
       "Application Review",
       "Lets get to work",
    ],
+
+   whyChooseZilt: {
+      slider: {
+         slideList: {
+            slide1: [
+               "We pick the best for you to select.",
+               "Thousands of vetted candidates in dozens of categories.",
+               "Risk-free resource swapping for the best fit.",
+            ],
+            slide2: [
+               "Easy and transparent one-to-one chat with candidates.",
+               "Simple and convenient payment methods.",
+               "Review past ratings.",
+            ],
+            slide3: [
+               "Track your staff activity down to every minute with ",
+               "screenshots.",
+               "Comprehensive timesheet data to process payments.",
+               "Create projects to organize and assign tasks more effectively.",
+            ],
+         },
+      },
+   },
 };

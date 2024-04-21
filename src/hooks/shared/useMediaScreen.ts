@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export const useMediaScreen = ({
    breakpoint,
    queryType = "max-width",
-   customWidth,
+   customBreakpoint,
 }: UseMediaScreenProps): boolean => {
    const [mediaQuery, setMediaQuery] = useState<string>("");
 
@@ -17,9 +17,11 @@ export const useMediaScreen = ({
          lg: 1023,
       };
 
-      const width = customWidth || `${breakpointValues[breakpoint]}px`;
+      const width =
+         customBreakpoint ||
+         (breakpoint && `${breakpointValues[breakpoint]}px`);
       setMediaQuery(`(${queryType}: ${width})`);
-   }, [customWidth, breakpoint, queryType]);
+   }, [customBreakpoint, breakpoint, queryType]);
 
    return useMediaQuery(mediaQuery);
 };

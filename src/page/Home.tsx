@@ -9,6 +9,7 @@ import JourneyOne from "@/sections/home/journey/JourneyOne";
 import JourneyThree from "@/sections/home/journey/JourneyThree";
 import JourneyTwo from "@/sections/home/journey/JourneyTwo";
 import WhyChooseZiltSlider from "@/sections/home/why-choose-zilt-sliders/WhyChooseZiltSlider";
+import FAQ from "@/sections/home/faq/FAQ";
 
 const Home = () => {
    return (
@@ -157,9 +158,43 @@ const Home = () => {
          {/*=== SECTION SIX ===*/}
          <section
             id="6"
-            className="py-8 bg-gradient-to-b from-white via-[#EDEFFF] via-100%  lg:py-24"
+            className="py-8 relative bg-gradient-to-b from-white via-[#EDEFFF] via-100%  lg:py-32"
          >
+            <span id="left-bottom-color-blend" className="size-full bg-[#EDEFFF] absolute -bottom-24 left-0 -z-[1]" />
+
             <WhyChooseZiltSlider />
+         </section>
+
+
+         {/*=== SECTION SEVEN ===*/}
+         <section id="7"
+            className="py-20 bg-[#F3F3F3] relative -rotate-2 skew-x-12 sm:py-36"
+         >
+            <>
+               <span
+                  id="right-top-color-blend"
+                  className="size-full absolute top-0 -right-2/3 -z-10 bg-inherit"
+               />
+
+               <span
+                  id="left-color-blend"
+                  className="size-full absolute top-0 -left-1/2 -z-10 bg-inherit"
+               />
+
+            </>
+
+            <div
+               id="faq"
+               className="z-10 rotate-2 -skew-x-12"
+            >
+               <h1 className="container text-center text-4xl text-pretty font-bold leading-relaxed 400:text-5xl lg:text-[54px]">
+                  Frequently asked questions
+               </h1>
+
+               <div className="my-16 pl-[15px]">
+                  <FAQ />
+               </div>
+            </div>
          </section>
       </section>
    );

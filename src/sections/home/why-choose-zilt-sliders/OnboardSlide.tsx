@@ -1,11 +1,20 @@
 import { CarouselItem } from "@/components/ui/carousel";
 import SliderList from "./SliderList";
 import MyButton from "@/components/my-components/MyButton";
+import { homeConstants } from "@/constants/home-conts";
 
 const OnboardSlide = () => {
+   const {
+      whyChooseZilt: {
+         slider: {
+            slideList: { slide1 },
+         },
+      },
+   } = homeConstants;
+
    return (
       <CarouselItem className="basis-[98%] sm:basis-auto md:basis-[98%]">
-         <div className="max-md:px-6 py-10 h-full flex flex-col-reverse gap-6  bg-white rounded-[20px] shadow-[0_4px_30px_rgba(0_0_0/0.06)] backdrop-blur-[6.3px] md:grid md:grid-cols-2">
+         <div className="max-md:px-6 max-lg:py-10 h-full flex flex-col-reverse gap-6  bg-white rounded-[20px] shadow-[0_4px_30px_rgba(0_0_0/0.06)] backdrop-blur-[6.3px] md:grid md:grid-cols-2">
             <div
                id="slide-text-1"
                className="flex flex-col justify-center md:pl-10"
@@ -15,9 +24,9 @@ const OnboardSlide = () => {
                </h1>
 
                <ul className="mt-6 max-w-[591px] 600:mt-9">
-                  <SliderList text="We pick the best for you to select." />
-                  <SliderList text="Thousands of vetted candidates in dozens of categories." />
-                  <SliderList text="Risk-free resource swapping for the best fit." />
+                  {slide1.map((data, index) => (
+                     <SliderList key={index} text={data} />
+                  ))}
                </ul>
 
                <MyButton
@@ -29,7 +38,11 @@ const OnboardSlide = () => {
             </div>
 
             <div className="w-full h-full flex items-center justify-center">
-               <img loading="lazy" src="/home/why-chhose-zilt-slide-1.png" className="w-[95%] sm:w-[300px] md:w-full lg:max-w-[95%]" />
+               <img
+                  loading="lazy"
+                  src="/home/why-chhose-zilt-slide-1.png"
+                  className="w-[95%] sm:w-[450px] md:w-full lg:max-w-[95%]"
+               />
             </div>
          </div>
       </CarouselItem>
