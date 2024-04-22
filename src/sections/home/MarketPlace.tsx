@@ -36,7 +36,7 @@ const MarketPlace = () => {
                   </CardTitle>
                </CardHeader>
 
-               <div className="overflow-x-auto pr-0">
+               <div className="hide-scrollbar overflow-x-auto pr-0">
                   <CardContent className="pt-2 px-0 pb-0 flex gap-4">
                      {itDevelopment.map((data, index) => (
                         <div
@@ -110,7 +110,7 @@ const MarketPlace = () => {
                   </CardTitle>
                </CardHeader>
 
-               <div className="overflow-x-auto">
+               <div className="hide-scrollbar overflow-x-auto">
                   <CardContent className="pt-2 px-0 pb-0 flex gap-4">
                      <div className="w-fit text-center space-y-2">
                         <span className="size-20 flex items-center justify-center bg-[#F6F6F6] rounded-lg">

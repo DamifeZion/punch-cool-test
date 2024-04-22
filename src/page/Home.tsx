@@ -89,11 +89,6 @@ const Home = () => {
          {/*=== SECTION FOUR ===*/}
          <section id="4" className="py-32 relative bg-white">
             <>
-               {/* <div
-                  id="left-color-blend"
-                  className="w-full h-1/2 absolute -top-6 right-0 -z-10 bg-[#202229]"
-               /> */}
-
                <img
                   loading="lazy"
                   src="/home/good-hands-top-line.svg"

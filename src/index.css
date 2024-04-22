@@ -91,3 +91,14 @@
       @apply absolute left-0 bottom-0 border-b-[4.5vw] border-b-transparent border-l-[100vw] border-l-black;
    }
 }
+
+.hide-scrollbar {
+   /* Hide scrollbar for Chrome, Safari and Opera */
+   ::-webkit-scrollbar {
+      display: none;
+   }
+
+   /* Hide scrollbar for IE, Edge and Firefox */
+   -ms-overflow-style: none; /* IE and Edge */
+   scrollbar-width: none; /* Firefox */
+}

@@ -6,7 +6,7 @@ function App() {
    return (
       <section suppressHydrationWarning>
          <Router>
-            <div className="mx-6 backdrop-blur-lg sticky inset-0 pt-0.5 z-20">
+            <div className="px-6 backdrop-blur-lg sticky inset-0 pt-0.5 z-20">
                <Navbar />
             </div>
 
