@@ -20,7 +20,7 @@ const Footer = () => {
             </ul>
 
             <ul
-               className="grid  gap-5 mt-[50px] grid-cols-2 max-500:gap-14 500:grid-cols-3 lg:grid-cols-6 
+               className="grid  gap-5 mt-[50px] grid-cols-2 max-500:gap-14 500:grid-cols-3 max-400:text-sm lg:grid-cols-6 
             [&>li]:uppercase [&>li>h3]:mb-4 [&>li>h3]:text-[#6C6D71] [&>li>h3]:text-sm [&>li>a]:text-white [&>li>a]:capitalize [&>li>a]:leading-loose [&>li>a]:block"
             >
                <li id="links-and-redirects" className="col-span-2">
