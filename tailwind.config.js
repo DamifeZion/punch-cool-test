@@ -39,7 +39,7 @@ export default {
          },
 
          fontSize: {
-            "md": "16px",
+            md: "16px",
          },
 
          colors: {

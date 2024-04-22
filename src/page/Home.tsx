@@ -1,4 +1,3 @@
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import HeroForm from "@/forms/home/HeroForm";
 import GoodHands from "@/sections/home/good-hands/GoodHands";
 import HowItWorked from "@/sections/home/HowItWorked";
@@ -11,6 +10,7 @@ import WhyChooseZiltSlider from "@/sections/home/why-choose-zilt-sliders/WhyChoo
 import FAQ from "@/sections/home/faq/FAQ";
 import MyButton from "@/components/my-components/MyButton";
 import Footer from "@/components/my-components/footer.tsx/Footer";
+import HeroAvatar from "@/sections/home/HeroAvatar";
 
 const Home = () => {
    return (
@@ -20,9 +20,9 @@ const Home = () => {
             <div className="container max-w-3xl mt-10 400:mt-14">
                <p className="text-4xl text-balanced text-center font-bold 400:text-5xl 500:text-6xl">
                   Finding the right fit{" "}
-                  <Avatar className="hidden  w-16 relative top-1 400:inline-block 400:w-[68px] sm:top-0">
-                     <AvatarImage loading="eager" src="/home/hero-avatar.svg" />
-                  </Avatar>
+                  <span className="inline-block">
+                     <HeroAvatar />
+                  </span>
                   has never been easier.
                </p>
 
@@ -141,7 +141,9 @@ const Home = () => {
             id="7"
             className="py-20 relative bg-[#F3F3F3] overflow-hidden sm:py-36 "
          >
-            <h2 className="container text-4xl text-pretty text-center font-bold !leading-[1.4] 400:text-5xl lg:text-[54px]">Frequently asked questions</h2>
+            <h2 className="container text-4xl text-pretty text-center font-bold !leading-[1.4] 400:text-5xl lg:text-[54px]">
+               Frequently asked questions
+            </h2>
 
             <div className="my-16 pl-0.5">
                <FAQ />
@@ -151,20 +153,27 @@ const Home = () => {
          </section>
 
          {/*=== SECTION NINE ===*/}
-         <section id="8" className="relative text- bg-[#0C0C0C] py-6 px-5 overflow-hidden lg:p-10">   
+         <section
+            id="8"
+            className="relative text- bg-[#0C0C0C] py-6 px-5 overflow-hidden lg:p-10"
+         >
             <div className="relative px-6 py-12 -skew-x-[2.5deg] -rotate-[2.8deg] bg-[#525AA0] lg:p-4 lg:h-[480px]">
                <div className="skew-x-[2.5deg] rotate-[2.5deg] h-full flex flex-col items-center justify-center gap-10">
                   <h1 className="max-w-[683px] text-center text-4xl text-white font-bold !leading-[1.3] 600:text-5xl md:text-[54px]">
                      Need a job done, and done well? Get started
                   </h1>
 
-                  <MyButton className="rotate-90 rounded-full size-[49px] md:size-[73px]" imgClassName="md:size-6" text=""/>
+                  <MyButton
+                     className="rotate-90 rounded-full size-[49px] md:size-[73px]"
+                     imgClassName="md:size-6"
+                     text=""
+                  />
                </div>
             </div>
          </section>
 
          {/*=== SECTION TEN ===*/}
-         <section id="10" >
+         <section id="10">
             <Footer />
          </section>
       </section>
